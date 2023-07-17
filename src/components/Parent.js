@@ -10,7 +10,7 @@ const Parent = () => {
 
     return (
         <div className="parent"> 
-            <h2>Parent Component</h2>
+            <h1>Parent Component</h1>
             <Child modal = {showModal} setState = {getState}/>
         </div>
     )
