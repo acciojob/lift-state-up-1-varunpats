@@ -9,10 +9,10 @@ const Parent = () => {
     }
 
     return (
-        <>
+        <div className="parent"> 
             <h2>Parent Component</h2>
             <Child modal = {showModal} setState = {getState}/>
-        </>
+        </div>
     )
 }
 

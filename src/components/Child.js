@@ -5,7 +5,7 @@ const Child = (props) => {
 
     const btnClick = () => {
         setFlag(!props.modal);
-        props.setState(true);
+        props.setState(!props.modal);
     }
 
     return (
