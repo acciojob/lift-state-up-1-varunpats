@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import Child from "./Child";
 
 const Parent = () => {
-    <h2>Parent Component</h2>
+    const [showModal, setShowModal] = useState(false);
+
+    const getState = (newState) => {
+        setShowModal(newState);
+    }
+
+    return (
+        <>
+            <h2>Parent Component</h2>
+            <Child modal = {showModal} setState = {getState}/>
+        </>
+    )
 }
 
 export default Parent;
